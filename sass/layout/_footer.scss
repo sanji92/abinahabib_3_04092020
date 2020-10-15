@@ -1,0 +1,21 @@
+.footer{
+    @include general-padding;
+    color: white;
+    background-color: darken($grey-background, 75.7%);
+    & h5{
+        padding-bottom: 20px;
+    }
+    & ul{
+        list-style: none;
+    }
+    & li{
+        margin-bottom: 5px;
+    }
+    & a{
+        @include general-link;
+        color: white;
+    }
+    & .fas{
+        margin-right: 10px;
+    }
+}

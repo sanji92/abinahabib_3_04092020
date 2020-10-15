@@ -1,0 +1,100 @@
+.localisation{
+    &__actual{
+        @include general-flex(row, center, center);
+        padding: 16px 0;
+        background-color: darken($grey-background, 4.7%);
+        @include xxlarge-size{
+            padding: 25px;
+        }
+        & p{
+            margin-left: 18px;
+        }
+    }
+    &__selection{
+        @include general-flex(column, flex-start, center);
+        text-align: center;
+        background-color: $grey-background;
+        @include general-padding(30px, 30px);
+        & p{
+            margin: 30px auto;
+        }
+    }
+}
+.how-it-works{
+    @include general-flex(column);
+    @include general-padding(50px, 50px);
+    @include medium-size{
+        padding: 50px 25%;
+        text-align: center;
+    }
+    @include large-size{
+        padding: 50px 30%;
+    }
+    @include xlarge-size{
+        padding: 50px 35%;
+    }
+    @include xxlarge-size{
+        padding: 50px 40%;
+    }
+    &__step1{
+        @include general-flex(row, flex-start, center);
+        @include steps;
+        margin-top: 22px;
+    }
+    &__step2{
+        @include general-flex(row, flex-start, center);
+        @include steps;
+        margin: 22px 0;
+    }
+    &__step3{
+        @include general-flex(row, flex-start, center);
+        @include steps;
+    }
+    & .fas{
+        margin: 0 20px 0 0;
+        padding-left: 12px;
+    }
+    & p{
+        padding: 5.5px 9.2px;
+        background-color: $color-primary;
+        position: relative;
+        left: -10px;
+        border-radius: 100%;
+        color: white;
+        font-size: 10px;
+        @include xxlarge-size{
+            font-size: 1rem;
+            padding: 5.5px 12px;
+        }
+    }
+}
+.restaurants-list{
+    @include general-flex(column);
+    @include general-padding(50px, 50px);
+    background-color: $grey-background;
+    &__title{
+        margin-bottom: 24px;
+        @include xlarge-size{
+            margin-bottom: 50px;
+            align-self: center;
+        }
+    }
+    & img{
+        display: none;
+    }
+    &__cards{
+        @include medium-size{
+            @include general-flex(row, space-between);
+            flex-wrap: wrap;
+        }
+        @include xlarge-size{
+            @include general-flex(row, center);
+            flex-wrap: wrap;
+        }
+        @include xxlarge-size{
+            @include general-flex(row, center);
+            flex-wrap: wrap;
+        }
+        
+    }
+}

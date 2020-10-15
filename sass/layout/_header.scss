@@ -1,0 +1,14 @@
+.header{
+    @include general-flex(row, center, center);
+    @include general-padding;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+    & img{
+        max-height: 34px;
+        flex: 2;
+        @include xxlarge-size{
+            height: 50px;
+            max-height: 50px;
+        }
+    }
+}

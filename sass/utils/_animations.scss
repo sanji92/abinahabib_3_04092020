@@ -1,0 +1,140 @@
+@keyframes check{
+    from{
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 17.3%;
+    }
+}
+@keyframes check2{
+    from{
+        opacity: 0;
+        transform: rotateY(0);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+}
+@keyframes heart{
+    0%{
+        color: rgba(0, 0, 0, 0);
+        transform: scaleY(0);
+        transform: scaleX(0);
+    }
+    15%{
+        color: #ff79d910;
+        transform: scaleY(0.15);
+        transform: scaleX(0.15);
+    }
+    25%{
+        color: #ff79d91f;
+        transform: scaleY(0.25);
+        transform: scaleX(0.25);
+    }
+    35%{
+        color: #ff79d93b;
+        transform: scaleY(0.35);
+        transform: scaleX(0.35);
+    }
+    45%{
+        color: #ff79d957;
+        transform: scaleY(0.45);
+        transform: scaleX(0.45);
+    }
+    55%{
+        color: #ff79d973;
+        transform: scaleY(0.55);
+        transform: scaleX(0.55);
+    }
+    65%{
+        color: #ff79d991;
+        transform: scaleY(0.65);
+        transform: scaleX(0.65);
+    }
+    75%{
+        color: #ff79d9a9;
+        transform: scaleY(0.75);
+        transform: scaleX(0.75);
+    }
+    85%{
+        color: #ff79d9c2;
+        transform: scaleY(0.85);
+        transform: scaleX(0.85);
+    }
+    95%{
+        color: #ff79d9dc;
+        transform: scaleY(0.95);
+        transform: scaleX(0.95);
+    }
+    100%{
+        color: $color-secondary;
+        transform: scaleY(1);
+        transform: scaleX(1);
+    }
+}
+@keyframes heart2{
+    0%{
+        color: rgb(0, 0, 0);
+        transform: scale(1.5, 1.5);
+    }
+    25%{
+        color: #9256dc2d;
+    }
+    50%{
+        color: #9256dc56;
+    }
+    75%{
+        color: #9256dc96;
+    }
+    100%{
+        color: $color-primary;
+    }
+}
+@keyframes open-menu{
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes loader{
+    from{
+        opacity: 1;
+        visibility: visible;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes background-loader{
+    0%{
+        // background-color:  rgba(146, 86, 220, 0.5);
+        background: linear-gradient(0deg, rgba(146, 86, 220, 0.3) 0%, rgba(255, 121, 218, 0.3) 0%);
+    }
+    50%{
+        // background-color: rgba(255, 121, 218, 0.5);
+        background: linear-gradient(0deg, rgba(146, 86, 220, 0.3) 40%, rgba(255, 121, 218, 0.3) 50%);
+    }
+    100%{
+        // background-color: rgba(153, 226, 208, 0.5);
+        background: linear-gradient(0deg, rgba(146, 86, 220, 0.3) 80%, rgba(255, 121, 218, 0.3) 90%);
+    }
+}
+@keyframes loader-stop{
+    from{
+        opacity: 1;
+        visibility: visible;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}

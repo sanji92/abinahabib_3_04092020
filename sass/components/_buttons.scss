@@ -1,0 +1,91 @@
+.btn--main{
+    width: 218px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(0deg, $color-primary 0%, $color-secondary 80%);
+    box-shadow: $block-shadow;
+    font-size: 1rem;
+    @include xlarge-size{
+        font-size: 1.05rem;
+        width: 240px;
+        height: 55px;
+    }
+    @include xxlarge-size{
+        font-size: 1.2rem;
+        width: 280px;
+        height: 75px;
+    }
+    &:hover{
+        cursor: pointer;
+        background: linear-gradient(0deg, lighten($color-primary, 5%) 0%, lighten($color-secondary, 5%) 80%);
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.7);
+    }
+}
+.btn--plat{
+    background-color: white;
+    box-shadow: $block-shadow;
+    margin-top: 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    max-height: 58px;
+    @include xxlarge-size{
+        max-height: 78px;
+    }
+    .price--plat{
+        margin-left: auto;
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+    & div{
+        padding: 10px;
+        max-height: 58px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        @include xxlarge-size{
+            max-height: 78px;
+        }
+    }
+    .check--plat{
+        position: absolute;
+        z-index: -1;
+        flex-shrink: 0;
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: $color-tertiary;
+        padding: 0;
+        width: 0%;
+        height: 58px;
+        @include xxlarge-size{
+            height: 78px;
+        }
+        & i{
+            color: white;
+            padding-top: 20px;
+            opacity: 0;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        .check--plat{
+            position: relative;
+            z-index: 0;
+            animation-name: check;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+            animation-delay: 0s;
+            & i{
+                padding-top: 20px;
+                animation-name: check2;
+                animation-duration: 1.7s;
+                animation-delay: 0s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
