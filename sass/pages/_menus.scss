@@ -7,16 +7,16 @@
         display: none;
     }
     & .bastille{
-        @include menus-image(url('../images/restaurants/bastille.jpg'));
+        @include menus-image(url("/img/restaurants/bastille.jpg"));
     }
     & .gourmand{
-        @include menus-image(url('../images/restaurants/le_gourmand.jpg'));
+        @include menus-image(url("/img/restaurants/le_gourmand.jpg"));
     }
     & .full-palette{
-        @include menus-image(url('../images/restaurants/the_full_palette.jpg'));
+        @include menus-image(url("/img/restaurants/the_full_palette.jpg"));
     }
     & .enchanted-plate{
-        @include menus-image(url('../images/restaurants/the_enchanted_plate.jpg'));
+        @include menus-image(url("/img/restaurants/the_enchanted_plate.jpg"));
     }
     &__carte{
         @include general-flex(column);

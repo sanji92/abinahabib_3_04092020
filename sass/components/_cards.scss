@@ -53,15 +53,15 @@
         }  
     }
     &--theFullPalette{
-        @include card(url('../images/restaurants/the_full_palette.jpg'));
+        @include card(url("/img/restaurants/the_full_palette.jpg"));
     }
     &--theEnchantedPlate{
-        @include card(url('../images/restaurants/the_enchanted_plate.jpg'));
+        @include card(url("/img/restaurants/the_enchanted_plate.jpg"));
     }
     &--bastille{
-        @include card(url('../images/restaurants/bastille.jpg'));
+        @include card(url("/img/restaurants/bastille.jpg"));
     }
     &--leGourmand{
-        @include card(url('../images/restaurants/le_gourmand.jpg'));
+        @include card(url("/img/restaurants/le_gourmand.jpg"));
     }
 }
